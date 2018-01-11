@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6语法Demo</title>
+</head>
+<body>
+<script>
+//    函数进化 ...动态参数
+    function sum(x,y,z) {
+        let total = 0;
+        if(x) total+=x;
+        if(y) total+=y;
+        if(z) total+=z;
+
+        console.log(`total:${total}`)
+    }
+    sum(5,"",9);
+
+    function sum2(...m) {
+        let total = 0;
+        for(var i of m){
+            total += i;
+        }
+        console.log(`total:${total}`);
+    }
+    sum2(1,2);
+
+    let sum3 = (...m)=>{
+        let total = 0;
+        for(var i of m){
+            total += i;
+        }
+        console.log(`total:${total}`);
+    }
+    sum3(4,5,7,9);
+//    ...的解构作用
+    var [x,y] = [4,8];
+    console.log(...[x,y]);
+
+    let arr1 = [1,4];let arr2 = [8,10];
+    console.log([...arr1,...arr2]);
+
+    var [a,...b]=[1,2,3,4,5];
+    console.log(b);
+
+    let [d,e,f] = "ES6";
+    console.log(d+"   "+e+"   "+f);
+
+    let g=[...'ES6'];
+    console.log(g);
+
+</script>
+
+</body>
+</html>
