@@ -1,0 +1,30 @@
+{
+  "status":"0",
+  "msg":"",
+  "result":[
+    {
+      "productId":"1001",
+      "productName":"商品1",
+      "productPrice":199,
+      "productImg":"1.jpg"
+    },
+    {
+      "productId":"1002",
+      "productName":"商品2",
+      "productPrice":299,
+      "productImg":"2.jpg"
+    },
+    {
+      "productId":"1003",
+      "productName":"商品3",
+      "productPrice":399,
+      "productImg":"3.jpg"
+    },
+    {
+      "productId":"1004",
+      "productName":"商品4",
+      "productPrice":499,
+      "productImg":"4.jpg"
+    }
+  ]
+}
